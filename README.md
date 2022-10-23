@@ -13,3 +13,5 @@ do {
 } 
 catch { ... }
 ```
+
+Just make sure your struct or class conforms to Codable/Encodable
