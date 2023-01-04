@@ -1,6 +1,7 @@
 import Foundation
 
 protocol CustomDefaultsObject {
+    public init() { }
     func setCustomObject<Object>(_ object: Object, forKey: String) throws where Object: Encodable
     func getCustomObject<Object>(forKey: String, castTo type: Object.Type) throws -> Object where Object: Decodable
 }
